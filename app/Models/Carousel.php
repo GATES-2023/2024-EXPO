@@ -5,11 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class Carousel extends Model
 {
-    public function menus()
-    {
-
-        return $this->hasMany(Menu::class);
-    }
+    use HasFactory;
+    protected $fillable = ['image_alt', 'order', 'image_path'];
 }

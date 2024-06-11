@@ -9,8 +9,8 @@
         
         <!-- logo -->
         <a href="#" class="flex items-center space-x-2 rtl:space-x-reverse">
-            <img src="{{ asset('/favicon.png') }}" class="h-8" alt="Rasul Icon">
-            <img src="{{ asset('/rasulicon.png') }}" class="h-8" alt="Rasul Icon">
+            <img src="{{asset('storage/images/favicon.png') }}" class="h-8" alt="Rasul Icon">
+            <img src="{{asset('storage/images/rasulicon.png') }}" class="h-8" alt="Rasul Icon">
         </a>
 
         <!-- CTA -->

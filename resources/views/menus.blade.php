@@ -52,7 +52,7 @@
     
             {{-- Menu Card --}}
     
-            <div id="menu-list">
+            <div id="menu-list" class="pb-8">
                 @include('partials.menu-list', ['menus' => $menus])
             </div>
         </div>

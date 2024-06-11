@@ -11,18 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('home_page', function (Blueprint $table) {
-            $table->id();
-            $table->string('hero_image_path');
-            $table->string('hero_image_alt');
-            $table->timestamps();
-        });
-
-        Schema::create('carousel_image', function (Blueprint $table) {
+        Schema::create('carousels', function (Blueprint $table) {
             $table->id();
             $table->string('image_path');
             $table->string('image_alt');
-            $table->string('order');
+            $table->integer('order');
             $table->timestamps();
         });
     }
